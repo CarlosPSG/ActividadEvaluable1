@@ -7,7 +7,7 @@ public class Main {
 
 
         boolean condicion = true;
-       String[] inventario = {};
+       String[] inventario = {"almendra","carlos","miquel"};
 
 
         while (condicion) {
@@ -18,6 +18,7 @@ public class Main {
                     anadirProducto.anadirProducto(inventario, valor());
                 }
                 case 2 -> {
+                    inventario = eliminarProdNombre.eliminarProdNombre(inventario,valor());
                 }
                 case 3 -> {}
                 case 4 -> {}
