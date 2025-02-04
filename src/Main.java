@@ -5,8 +5,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+
         boolean condicion = true;
-        String[] inventario = {};
+       String[] inventario = {};
 
 
         while (condicion) {
@@ -15,10 +16,9 @@ public class Main {
 
             switch (opcion) {
                 case 1 -> {
-                    System.out.println("Rosello excelente");
-                    System.out.println();
                 }
-                case 2 -> {}
+                case 2 -> {
+                }
                 case 3 -> {}
                 case 4 -> {}
                 case 5 -> {}
