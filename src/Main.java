@@ -11,11 +11,11 @@ public class Main {
 
 
         while (condicion) {
-
             int opcion = menu();
 
             switch (opcion) {
                 case 1 -> {
+                    anadirProducto.anadirProducto(inventario, valor());
                 }
                 case 2 -> {
                 }
@@ -45,5 +45,10 @@ public class Main {
         System.out.println("Ingresa una opcion: ");
         int opcion = sc.nextInt();
         return opcion;
+    }
+    public static String valor () {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese un producto");
+        return sc.nextLine();
     }
 }
