@@ -5,20 +5,20 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+
         boolean condicion = true;
-        String[] inventario = {};
+       String[] inventario = {};
 
 
         while (condicion) {
-
             int opcion = menu();
 
             switch (opcion) {
                 case 1 -> {
-                    System.out.println("Rosello excelente");
-                    System.out.println();
+                    anadirProducto.anadirProducto(inventario, valor());
                 }
-                case 2 -> {}
+                case 2 -> {
+                }
                 case 3 -> {}
                 case 4 -> {}
                 case 5 -> {}
@@ -45,5 +45,10 @@ public class Main {
         System.out.println("Ingresa una opcion: ");
         int opcion = sc.nextInt();
         return opcion;
+    }
+    public static String valor () {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese un producto");
+        return sc.nextLine();
     }
 }
