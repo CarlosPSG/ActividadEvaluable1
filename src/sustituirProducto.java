@@ -1,10 +1,6 @@
 import java.util.Objects;
 
 public class sustituirProducto {
-    public static void main(String[] args) {
-
-    }
-
     public static String[] reemplazarProducto (String[] inventario, String opcion){
         System.out.println("Sustitución de producto: ");
         String res = Main.valor();
