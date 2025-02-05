@@ -1,5 +1,5 @@
 public class modificarProducto {
-    public static String[] modificarProducto(String[] inventario) {
+    public static String[] modificarProductoinventari(String[] inventario) {
         for (int i = 0; i < inventario.length; i++) {
             System.out.println("Que producto quieres modificar?");
             String prodeliminar = Main.valor();
