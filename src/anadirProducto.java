@@ -2,9 +2,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class anadirProducto {
-    public static void main(String[] args) {
-    }
-
     public static String[] anadirProducto(String [] inventario, String respuesta) {
         inventario = Arrays.copyOf(inventario, inventario.length + 1);
         inventario[inventario.length-1] = respuesta;

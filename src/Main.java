@@ -15,20 +15,27 @@ public class Main {
 
             switch (opcion) {
                 case 1 -> {
-                    anadirProducto.anadirProducto(inventario, valor());
+                    inventario = anadirProducto.anadirProducto(inventario, valor());
                 }
                 case 2 -> {
                     inventario = eliminarProdNombre.eliminarProdNombre(inventario,valor());
                 }
-                case 3 -> {}
-                case 4 -> {
-                    sustituirProducto.reemplazarProducto(inventario, valor());
+                case 3 -> {
+
                 }
-                case 5 -> {}
-                case 6 -> {}
-                case 7 -> {}
+                case 4 -> {
+                    inventario = sustituirProducto.reemplazarProducto(inventario, valor());
+                }
+                case 5 -> {
+
+                }
+                case 6 -> {
+
+                }
+                case 7 -> {
+
+                }
                 case 8 -> {
-                    System.out.println("Rosello excelente");
                     condicion = false;
                 }
             }
