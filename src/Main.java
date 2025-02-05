@@ -24,13 +24,13 @@ public class Main {
 
                 }
                 case 4 -> {
-                    inventario = sustituirProducto.reemplazarProducto(inventario, valor());
+                    inventario = modificarProducto.modificarProducto(inventario);
                 }
                 case 5 -> {
-
+                    inventario = modificarProducto.modificarProducto(inventario);
                 }
                 case 6 -> {
-
+                    mostraProducte.mostrarCantidadProducto(inventario, valor());
                 }
                 case 7 -> {
 
