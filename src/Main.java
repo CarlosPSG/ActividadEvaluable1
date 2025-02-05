@@ -36,7 +36,6 @@ public class Main {
 
     }
     static int menu () {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Inventario CIFP Pere de Son Gall");
         System.out.println("1. Añadir Producto");
         System.out.println("2. Eliminar Producto por nombre");
@@ -45,13 +44,17 @@ public class Main {
         System.out.println("6. Mostrar Producto");
         System.out.println("7. Mostrar resumen del inventario");
         System.out.println("8. Salir");
-        System.out.println("Ingresa una opcion: ");
-        int opcion = sc.nextInt();
+        int opcion = valornumeroco();
         return opcion;
     }
     public static String valor () {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese un producto");
         return sc.nextLine();
+    }
+    public static int valornumeroco() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese un Numero");
+        return sc.nextInt();
     }
 }
