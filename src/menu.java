@@ -1,5 +1,5 @@
 public class menu {
-    public static int menuInventari () {
+    public static void menuInventari () {
         int opcion;
         System.out.println("Inventario CIFP Pere de Son Gall");
         System.out.println("1. Añadir Producto");
@@ -9,7 +9,5 @@ public class menu {
         System.out.println("5. Mostrar Producto");
         System.out.println("6. Mostrar resumen del inventario");
         System.out.println("7. Salir");
-        opcion = Main.valornumeroco();
-        return opcion;
     }
 }
