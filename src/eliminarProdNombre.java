@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class eliminarProdNombre {
-    public static String[] eliminarProdNombre(String[] inventario, String nombre) {
+    public static String[] eliminarProdNombreinventario(String[] inventario, String nombre) {
         for (int i = 0; i < inventario.length; i++) {
             if (inventario[i].equals(nombre)) {
                 int pos = Arrays.binarySearch(inventario, nombre);

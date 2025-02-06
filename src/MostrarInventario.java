@@ -1,8 +1,7 @@
 import java.util.Arrays;
 
 public class MostrarInventario {
-    public static String[] mostrarInventario(String[] inventario) {
+    public static void mostrarInventario(String[] inventario) {
         System.out.println(Arrays.toString(inventario));
-        return inventario;
     }
 }
