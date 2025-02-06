@@ -4,7 +4,7 @@ public class Main {
     public static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         boolean condicion = true;
-       String[] inventario = {"almendra","carlos","miquel"};
+       String[] inventario = {};
         while (condicion) {
             menu.menuInventari();
             int opcion = valornumeroco();
@@ -19,7 +19,7 @@ public class Main {
                     inventario = eliminarprodPosicion.eliminarPosicion(inventario,valornumeroco());
                 }
                 case 4 -> {
-                    inventario = modificarProducto.modificarProductoinventari(inventario);
+                    modificarProducto.modificarProductoinventari(inventario);
                 }
                 case 5 -> {
                     mostraProducte.mostrarCantidadProducto(inventario, valor());
