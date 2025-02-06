@@ -6,7 +6,8 @@ public class Main {
         boolean condicion = true;
        String[] inventario = {"almendra","carlos","miquel"};
         while (condicion) {
-            int opcion = menu.menuInventari();
+            menu.menuInventari();
+            int opcion = valornumeroco();
             switch (opcion) {
                 case 1 -> {
                     inventario = anadirProducto.anadirProductoinventario(inventario, valor());
@@ -34,6 +35,7 @@ public class Main {
 
     }
     public static String valor () {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese un producto");
         return sc.nextLine();
     }
