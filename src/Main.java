@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class Main {
-    public static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         boolean condicion = true;
        String[] inventario = {"almendra","carlos","miquel"};
         while (condicion) {
@@ -31,6 +31,8 @@ public class Main {
                     condicion = false;
                 }
             }
+            System.out.println("Presiona enter para continuar");
+            sc.nextLine();
         }
     }
     public static String valor () {
@@ -39,6 +41,7 @@ public class Main {
         return sc.nextLine();
     }
     public static int valornumeroco() {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese un Numero");
         return sc.nextInt();
     }
