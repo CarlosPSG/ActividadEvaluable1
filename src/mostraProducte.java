@@ -2,7 +2,7 @@ public class mostraProducte {
     public static void mostrarCantidadProducto(String[] invetario, String producto) {
         int contador = 0;
         for (int i = 0; i < invetario.length; i++) {
-            if (invetario[i].equals(producto)) {
+            if (invetario[i].equalsIgnoreCase(producto)) {
                 contador++;
             }
         }
